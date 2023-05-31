@@ -4,39 +4,37 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OracleOne G5 | Encriptador</title>
         <link rel="stylesheet" href="css/index.css">
-        <script src="js/index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family:Inter:wght@200;400&display=swap" rel="stylesheet" >
+        <script src="/js/index.js"></script>
+        <title>OracleOne G5 | Encriptador</title>
     </head>
     <body>
-        <header class="header">
-            <div class="header-content"></div>
-                <img src="src/logo.svg" id="logo">
+        <header>
+            <div class="header-content">
+                <img class="logo" src="src/logo.svg" alt="Logo de alura">
                 <h1 class="title">OracleOne G5 | Encriptador</h1>
             </div>
         </header>
         <main class="main">
             <section class="section">
-                <div class="text-division">
-                    <textarea name="text-box" id="text-box" cols="30" rows="20" placeholder="Por favor ingresar el texto aqui..."></textarea>
+                <textarea class="text-box" cols="30" rows="20" placeholder="Por favor ingrese el texto aqui."></textarea> 
+                <div>
+                    <h6 class="information">Solo letras minusculas y sin acentos</h6>
                 </div>
                 <div class="buttons-division">
-                    <button class="btn" id="btn-encriptar">Encriptar</button>
-                    <button class="btn" id="btn-desencriptar">Desencriptar</button>
-                    <button class="btn" id="btn-copiar">Copiar texto</button>
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar">Desencriptar</button>
                 </div>
             </section>
             <section class="section">
-                <div class="img-division">
-                    <img src="src/wait.svg" alt="" id="wait-img">
-                </div>
-                <div class="result-division">
-                    <textarea name="result-box" id="result-box" rows="4" cols="50" readonly></textarea>
+                <textarea class="text-mensaje" cols="20" rows="7" readonly></textarea>
+                <div>
+                    <button class="btn-copiar">Copiar</button>
                 </div>
             </section>
         </main>
-        <footer>
-
-        </footer>
     </body>
 </html>
