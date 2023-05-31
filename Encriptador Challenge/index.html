@@ -5,10 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family:Inter:wght@200;400&display=swap" rel="stylesheet" >
-        <script src="/js/index.js"></script>
         <title>OracleOne G5 | Encriptador</title>
     </head>
     <body>
@@ -26,15 +22,16 @@
                 </div>
                 <div class="buttons-division">
                     <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                    <button class="btn-desencriptar">Desencriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                 </div>
             </section>
             <section class="section">
                 <textarea class="text-mensaje" cols="20" rows="7" readonly></textarea>
                 <div>
-                    <button class="btn-copiar">Copiar</button>
+                    <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
                 </div>
             </section>
         </main>
+    <script src="js/index.js"></script>
     </body>
 </html>
